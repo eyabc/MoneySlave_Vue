@@ -1,0 +1,19 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img, svg, button, input, textarea, select, i {
+  vertical-align: middle;
+}
