@@ -35,7 +35,7 @@ Study Money Project : 공부와 돈 : 돈의노예에 탈출하기 위한 어플
 * typeScript 
 1. front: Vue.js 사용하여 스마트폰에서 이용할 것이다 웹뷰.********
 2. back: SpringBoot/Gradle/Java8
-3. DB: MySQL(oAuth 회원 정보 저장) / Mongo(통장정보, 공부시간정보)
+3. DB: MySQL(oAuth 회원 정보 저장) / Mysql(통장정보, 공부시간정보)
 4. Spring Security
 5. Element ui vue
 6. i18next
