@@ -17,3 +17,7 @@ a {
 img, svg, button, input, textarea, select, i {
   vertical-align: middle;
 }
+
+.el-form-item__label {
+  line-height: 0;
+}

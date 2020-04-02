@@ -1,0 +1,1 @@
+export const SignUp = () => import('./SignUp.vue');

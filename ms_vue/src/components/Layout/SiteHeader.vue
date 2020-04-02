@@ -5,7 +5,7 @@
                 <fa icon="won-sign" />
             </span>
             <span>
-                <el-button size="mini" plain>Plain</el-button>
+                <el-button icon="login" size="mini" plain>로그인</el-button>
             </span>
         </div>
     </div>
@@ -31,5 +31,13 @@
     }
     #logo {
         font-size: 20px;
+    }
+    .login {
+        :hover {
+        }
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
     }
 </style>
