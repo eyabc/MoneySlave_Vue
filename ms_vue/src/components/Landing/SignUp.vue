@@ -1,21 +1,21 @@
 <template>
     <div>
         <el-card>
-            <el-form :model="loginForm" label-position="top" :rules="rules" ref="loginForm">
-                <el-form-item label="이름" prop="name">
-                    <el-input v-model="loginForm.name"></el-input>
+            <el-form :model="signUpForm" label-position="top" :rules="rules" ref="signUpForm" class="sign-up-form">
+                <el-form-item label="이름" prop="name" >
+                    <el-input v-model="signUpForm.name"></el-input>
                 </el-form-item>
                 <el-form-item label="아이디" prop="id">
-                    <el-input v-model="loginForm.id"></el-input>
+                    <el-input v-model="signUpForm.id"></el-input>
                 </el-form-item>
                 <el-form-item label="비밀번호" prop="pass">
-                    <el-input type="password" v-model="loginForm.pass" autocomplete="off"></el-input>
+                    <el-input type="password" v-model="signUpForm.pass" autocomplete="off"></el-input>
                 </el-form-item>
                 <el-form-item label="비밀번호 확인" prop="checkPass">
-                    <el-input type="password" v-model="loginForm.checkPass" autocomplete="off"></el-input>
+                    <el-input type="password" v-model="signUpForm.checkPass" autocomplete="off"></el-input>
                 </el-form-item>
                 <el-form-item>
-                    <el-button type="primary" class="submit-btn" @click="submitForm('loginForm')">회원가입</el-button>
+                    <el-button type="primary" class="submit-btn" @click="submitForm('signUpForm')">회원가입</el-button>
                 </el-form-item>
             </el-form>
         </el-card>
@@ -26,7 +26,7 @@
     // TODO 회원가입 validate 검사
     @Component({})
     export default class SignUp extends Vue {
-        loginForm: { name: string; id: string; pass: string; checkPass: string } = {
+        signUpForm: { name: string; id: string; pass: string; checkPass: string } = {
             name: '',
             id: '',
             pass: '',

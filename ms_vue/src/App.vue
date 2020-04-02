@@ -10,9 +10,7 @@
 
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator';
-// import { Action, State } from 'vuex-class';
 import { SiteHeader, SiteFooter } from '@/components';
-import '@/assets/scss/common.scss'
 
 const components = { SiteFooter, SiteHeader };
 @Component({ components })
@@ -20,6 +18,7 @@ export default class App extends Vue {
 
 }
 </script>
+<style lang="scss" src="@/assets/scss/common.scss"/>
 <style lang="scss" >
 #site {
   &-body {
