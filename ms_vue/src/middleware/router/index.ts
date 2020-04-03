@@ -1,15 +1,21 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import { Landing } from "@/views";
+import * as views from "@/views";
 
 Vue.use(VueRouter);
 
+// TODO user 에 따라 route restrict
 const routes = [
   {
     path: '/',
     name: 'Landing',
-    component: Landing,
+    component: views.Landing,
   },
+  {
+    path: '/schedule',
+    name: 'Schedule',
+    component: views.Schedule,
+  }
 ];
 
 const router = new VueRouter({
