@@ -59,7 +59,7 @@
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .date-picker {
         width: 140px !important;
     }

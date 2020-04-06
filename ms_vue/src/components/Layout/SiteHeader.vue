@@ -63,7 +63,7 @@ export default class SiteHeader extends Vue {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     #wrapper {
         position: fixed;
         top: 0;

@@ -16,7 +16,7 @@
 
     }
 </script>
-<style lang='scss'>
+<style lang='scss' scoped>
     .schedule-wrapper {
         padding: 30px 15px;
     }

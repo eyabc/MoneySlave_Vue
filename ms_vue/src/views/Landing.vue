@@ -18,7 +18,7 @@
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .main-wrapper {
         margin-top: 64px;
         background: #F9F9F9;
