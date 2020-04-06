@@ -15,6 +15,26 @@ const routes = [
     path: '/schedule',
     name: 'Schedule',
     component: views.Schedule,
+  },
+  {
+    path: '/agenda',
+    name: 'Agenda',
+    component: views.Agenda
+  },
+  {
+    path: '/user',
+    name: 'User',
+    component: views.User
+  },
+  {
+    path: '/accout',
+    name: 'Account',
+    component: views.Account
+  },
+  {
+    path: '/payment',
+    mane: 'Payment',
+    component: views.Payment
   }
 ];
 

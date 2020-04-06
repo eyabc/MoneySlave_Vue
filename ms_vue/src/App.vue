@@ -2,7 +2,7 @@
   <div id="site">
     <site-header />
     <div class="container">
-      <router-view />
+      <router-view class="content"/>
     </div>
     <site-footer id="site-footer" />
   </div>
@@ -32,5 +32,14 @@ export default class App extends Vue { }
     width: 100%;
     text-align: center;
   }
+}
+
+.content {
+  width: 1000px;
+  height: 100%;
+  background: #F9F9F9;
+  margin-top: 64px;
+  box-sizing: border-box;
+  padding: 20px 15px;
 }
 </style>

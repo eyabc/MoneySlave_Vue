@@ -1,5 +1,6 @@
 <template>
-    <div class="content schedule-wrapper">
+    <div class=" schedule-wrapper">
+        <agenda/>
         <create-todo></create-todo>
         <pomodoro/>
         <todo-list></todo-list>
@@ -8,9 +9,9 @@
 
 <script lang="ts">
     import { Vue, Component } from 'vue-property-decorator';
-    import { CreateTodo, Pomodoro, TodoList } from '@/components';
+    import { CreateTodo, Pomodoro, TodoList, Agenda } from '@/components';
 
-    const components = { CreateTodo, Pomodoro, TodoList };
+    const components = { CreateTodo, Pomodoro, TodoList, Agenda };
     @Component({components})
     export default class Schedule extends Vue {
 
@@ -18,6 +19,5 @@
 </script>
 <style lang='scss' scoped>
     .schedule-wrapper {
-        padding: 30px 15px;
     }
 </style>

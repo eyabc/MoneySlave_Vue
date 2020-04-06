@@ -67,3 +67,8 @@
         }
     }
 </script>
+<style lang="scss">
+    .submit-btn {
+        width: 100%;
+    }
+</style>

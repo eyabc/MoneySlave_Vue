@@ -21,3 +21,8 @@ import { Vue, Component, Prop } from 'vue-property-decorator'
         @Prop() readonly options: any;
     }
 </script>
+<style lang="scss">
+    .form {
+        margin-left: 15px;
+    }
+</style>

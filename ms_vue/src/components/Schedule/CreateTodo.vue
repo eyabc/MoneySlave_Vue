@@ -60,18 +60,7 @@
 </script>
 
 <style lang="scss" scoped>
-    .date-picker {
-        width: 140px !important;
-    }
 
-    .icon {
-        padding: 10px;
-
-        &:hover {
-            font-weight: bold;
-            cursor: pointer;
-        }
-    }
 
     .opened {
         /*&:after {*/
@@ -92,9 +81,7 @@
         display: flex;
         justify-content: flex-end;
     }
-    .form {
-        margin-left: 15px;
-    }
+
     .el-textarea {
         margin-top: 10px;
     }

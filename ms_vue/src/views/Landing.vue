@@ -20,10 +20,7 @@
 
 <style lang="scss" scoped>
     .main-wrapper {
-        margin-top: 64px;
-        background: #F9F9F9;
         height: 500px;
-        width: 1000px;
         position: relative;
     }
     .title {
@@ -37,8 +34,5 @@
         right: 64px;
         top: 10%;
         width: 400px;
-    }
-    .submit-btn {
-        width: 100%;
     }
 </style>

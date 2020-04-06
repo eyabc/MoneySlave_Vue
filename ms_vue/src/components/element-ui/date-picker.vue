@@ -46,4 +46,15 @@
     }
 </script>
 
-
+<style lang="scss" scoped>
+    .date-picker {
+        width: 140px !important;
+    }
+    .icon {
+        padding: 10px;
+        &:hover {
+         font-weight: bold;
+         cursor: pointer;
+     }
+    }
+</style>

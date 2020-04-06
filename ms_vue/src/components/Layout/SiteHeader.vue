@@ -14,9 +14,9 @@
                         <el-dropdown-menu slot="dropdown" class="dropdown">
                             <!-- TODO link to menu -->
                             <el-dropdown-item disabled>{{userInfo.id}}</el-dropdown-item>
-                            <el-dropdown-item>계좌</el-dropdown-item>
-                            <el-dropdown-item>급여</el-dropdown-item>
-                            <el-dropdown-item>내 정보</el-dropdown-item>
+                            <el-dropdown-item @click.native="$router.push('/account')">계좌</el-dropdown-item>
+                            <el-dropdown-item @click.native="$router.push('/payment')">급여</el-dropdown-item>
+                            <el-dropdown-item @click.native="$router.push('/user')">내 정보</el-dropdown-item>
                             <el-dropdown-item @click.native="logout">로그아웃</el-dropdown-item>
                         </el-dropdown-menu>
                     </el-dropdown>
@@ -51,7 +51,7 @@ export default class SiteHeader extends Vue {
     private logout () {
         this.$message({ type: 'success', message: '로그아웃 되었습니다' });
         this.setUserInfo(null);
-        console.log(this.userInfo);
+        this.$router.push('/')
     }
 
     private created () {
@@ -77,11 +77,6 @@ export default class SiteHeader extends Vue {
 
     #logo {
         font-size: 20px;
-    }
-
-    .login {
-        :hover {
-        }
     }
 
     .container {
