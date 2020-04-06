@@ -7,17 +7,20 @@
                 <span v-if="!user">
                     <el-button icon="login" size="mini" @click="handleDialogSignIn" plain>로그인</el-button>
                 </span>
-                <el-dropdown trigger="click" v-else>
-                    <span class="el-dropdown-link"><b>{{username}}</b> 님 오늘하루도 화이팅<i class="el-icon-arrow-down el-icon--right"></i></span>
-                    <el-dropdown-menu slot="dropdown" class="dropdown">
-                        <!-- TODO link to menu -->
-                        <el-dropdown-item disabled>{{userid}}</el-dropdown-item>
-                        <el-dropdown-item>계좌</el-dropdown-item>
-                        <el-dropdown-item>급여</el-dropdown-item>
-                        <el-dropdown-item>내 정보</el-dropdown-item>
-                        <el-dropdown-item>로그아웃</el-dropdown-item>
-                    </el-dropdown-menu>
-                </el-dropdown>
+                <div v-else>
+                    <span class="property">통장: 1000원</span>
+                    <el-dropdown>
+                        <span class="el-dropdown-link"><strong>{{username}}</strong> 님 오늘하루도 화이팅<i class="el-icon-arrow-down el-icon--right"></i></span>
+                        <el-dropdown-menu slot="dropdown" class="dropdown">
+                            <!-- TODO link to menu -->
+                            <el-dropdown-item disabled>{{userid}}</el-dropdown-item>
+                            <el-dropdown-item>계좌</el-dropdown-item>
+                            <el-dropdown-item>급여</el-dropdown-item>
+                            <el-dropdown-item>내 정보</el-dropdown-item>
+                            <el-dropdown-item>로그아웃</el-dropdown-item>
+                        </el-dropdown-menu>
+                    </el-dropdown>
+                </div>
             </div>
         </div>
         <sign-in ref="signInForm"/>
@@ -69,5 +72,8 @@
     }
     .dropdown {
         top: 40px !important;
+    }
+    .property {
+        padding-right: 10px;
     }
 </style>
