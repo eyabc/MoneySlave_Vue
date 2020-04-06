@@ -1,10 +1,10 @@
 <template>
   <div id="site">
-    <site-header></site-header>
+    <site-header />
     <div class="container">
-      <router-view></router-view>
+      <router-view />
     </div>
-    <site-footer id="site-footer"></site-footer>
+    <site-footer id="site-footer" />
   </div>
 </template>
 
@@ -14,9 +14,7 @@ import { SiteHeader, SiteFooter } from '@/components';
 
 const components = { SiteFooter, SiteHeader };
 @Component({ components })
-export default class App extends Vue {
-
-}
+export default class App extends Vue { }
 </script>
 <style lang="scss" src="@/assets/scss/common.scss"/>
 <style lang="scss" >
