@@ -25,23 +25,15 @@
                     align="center">
                 <template slot-scope="scope" v-if="scope.row.root !== false">
                     <div v-if="editing.indexOf(scope.row.id) === -1">
-                        <el-button
-                                size="mini"
-                                icon="el-icon-check"
-                                class="action-btn"
-                                type="success"
-                                @click="handleEdit(scope,scope.$index, scope.row)"/>
-                        <el-button
-                                size="mini"
+                        <table-action-icon-btn type="success"
+                                               icon="el-icon-check"/>
+                        <table-action-icon-btn
                                 icon="el-icon-edit-outline"
-                                class="action-btn"
-                                @click="handleEdit(scope,scope.$index, scope.row)"/>
-                        <el-button
-                                size="mini"
+                                @click.native="handleEdit(scope,scope.$index, scope.row)"/>
+                        <table-action-icon-btn
                                 type="danger"
                                 icon="el-icon-delete"
-                                class="action-btn"
-                                @click="handleDelete(scope.$index, scope.row)"/>
+                        />
                     </div>
                     <div v-else>
                         <el-button
@@ -57,10 +49,12 @@
 
 <script lang="ts">
     import {Vue, Component} from 'vue-property-decorator';
+    import { TableActionIconBtn } from "@/components";
 
-    @Component
+    const components = { TableActionIconBtn };
+    @Component({components})
     export default class AgendaTable extends Vue {
-        editing: number[] = []
+        editing: number[] = [];
         edit = false;
         tableData: Array<any> = [{
             id: 1,
@@ -91,9 +85,7 @@
             name: 'wangxiaohu'
         }];
         handleEdit(scope: any, index: any, row: any) {
-            console.log(scope)
-            console.log(index)
-            console.log(row)
+            console.log('ttte')
             this.editing.push(scope.row.id)
         }
         handleEditClose(scope: any, index: any, row: any) {

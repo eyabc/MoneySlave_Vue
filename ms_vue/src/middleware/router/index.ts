@@ -27,7 +27,7 @@ const routes = [
     component: views.User
   },
   {
-    path: '/accout',
+    path: '/account',
     name: 'Account',
     component: views.Account
   },

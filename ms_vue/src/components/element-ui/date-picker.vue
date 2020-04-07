@@ -6,7 +6,6 @@
                 v-model="date"
                 type="date"
                 :clearable="false"
-                placeholder="Pick a day"
                 :picker-options="pickerOptions">
         </el-date-picker>
         <span><i class="icon el-icon-arrow-right"/></span>
