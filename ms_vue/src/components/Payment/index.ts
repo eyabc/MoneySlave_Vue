@@ -1,0 +1,1 @@
+export const PayForm = () => import('./PayForm.vue');

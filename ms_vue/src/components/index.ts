@@ -5,3 +5,4 @@ export * from './Agenda';
 export * from './User';
 export * from './element-ui';
 export * from './Account';
+export * from './Payment';
